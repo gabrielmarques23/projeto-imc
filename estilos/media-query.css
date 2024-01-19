@@ -1,6 +1,82 @@
 @charset "UTF-8";
 
+/*Typical Device Breakpoints
+
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: de 992px até 1200px
+TV: acima de 1200px
+*/
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
+    body {
+        background-image: linear-gradient(to bottom, #0c0c2e, #1a1a69);
+    }
+
+    .card {
+        padding: 4.8rem 6.4rem 6.4rem;
+        min-width: 40.5rem;
+
+    }
+
+    .tittle {
+        font-size: 3.5rem;
+        line-height: 6rem;
+    }
+
+    form button {
+        font-size: 1.4rem;
+        text-indent: 10px;
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    body {
+        background-image: linear-gradient(to bottom, #0c0c2e, #1a1a69);
+    }
+
+    .card {
+        padding: 4.8rem 6.4rem 6.4rem;
+        min-width: 50.5rem;
+
+    }
+
+    .tittle {
+        font-size: 3.5rem;
+        line-height: 6rem;
+        color: var(--tt-heading);
+    }
+
+    form button {
+        font-size: 1.5rem;
+        text-indent: 10px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: linear-gradient(to bottom, #0c0c2e, #1a1a69);
+    }
+
+    .card {
+        padding: 4.8rem 6.4rem 6.4rem;
+        min-width: 60.5rem;
+    }
+
+    .tittle {
+        font-size: 3.5rem;
+        line-height: 8rem;
+        color: var(--tt-heading);
+    }
+
+    form button {
+        font-size: 1.6rem;
+        text-indent: 10px;
+    }
     
 }
