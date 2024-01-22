@@ -28,23 +28,23 @@
 <body>
 
     <div class="alert-error">
-       Digite somente números!
+        Digite somente números!
     </div>
 
     <div class="container">
 
         <main class="card">
-            <form  onsubmit="" autocomplete="off">
+            <form onsubmit="" autocomplete="off">
                 <h1 class="tittle">Cálculo de IMC</h1>
 
                 <div class="input-wrapper">
                     <label for="weight">Peso (kg)</label>
-                    <input id="weight" type="text" placeholder="165cm">
+                    <input id="weight" type="text" placeholder="60kg">
                 </div>
 
                 <div class="input-wrapper">
-                    <label for="height">Altura</label>
-                    <input id="height" type="text" placeholder="60kg">
+                    <label for="height">Altura (cm)</label>
+                    <input id="height" type="text" placeholder="165cm">
                 </div>
                 <button type="submit">Calcular IMC
                     <img class="arrow" src="/assets/arrow.svg" alt="Seta apontada para a direita" srcset="">
@@ -55,14 +55,18 @@
         </main>
     </div>
 
-<div class="modal-wrapper">
-    <div class="modal card">
-        <h2 class="tittle">O seu IMC é de 28</h2>
-        <button class="close">
-            <img src="assets/close.svg" alt="imagem para fechar o pop-up">
-        </button>
+    <div class="modal-wrapper">
+        <div class="modal card">
+            <h2 class="tittle">
+
+                <button class="close">
+                    <img src="assets/close.svg" alt="imagem para fechar o pop-up">
+                </button>
+
+                <span>O seu IMC é de 28</span>
+            </h2>
+        </div>
     </div>
-</div>
 
 </body>
 

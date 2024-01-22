@@ -40,6 +40,7 @@ TV: acima de 1200px
 
     /*modal wrapper*/
     .modal-wrapper {
+        
         position: absolute;
         inset: 0;
         background: rgba(0, 0, 0, 0.7);
