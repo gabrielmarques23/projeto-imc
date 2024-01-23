@@ -195,7 +195,7 @@ transform: translateY(0);
     color: var(--tt-error);
 
     text-align: center;
-    font-weight: 600;
+    font-weight: normal;
     padding: .5rem 0;
 
     position: absolute;
