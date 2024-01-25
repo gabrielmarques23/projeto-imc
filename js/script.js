@@ -6,6 +6,7 @@ const Modal = {
 
     wrapper: document.querySelector('.modal-wrapper'),
     message: document.querySelector('.modal .tittle span'),
+    image: document.querySelector('.modal img.img-imc'),
     buttonClose: document.querySelector('.modal button.close'),
 
     open() {
@@ -25,39 +26,55 @@ const AlertError = {
         AlertError.element.classList.remove('open')
     }
 }
-function notNumber(value){
+function notNumber(value) {
     return isNaN(value) || value == ""
 }
-function calculateIMC (weight, height) {
+function calculateIMC(weight, height) {
     return (weight / ((height / 100) ** 2)).toFixed(2)
 }
-
 
 inputWeight.oninput = () => AlertError.close()
 inputHeight.oninput = () => AlertError.close()
 
 form.onsubmit = event => {
     event.preventDefault()
-    
+
     const weight = inputWeight.value
     const height = inputHeight.value
     const weightOrHeightIsNotANumber = notNumber(weight) || notNumber(height)
-    
+
     if (weightOrHeightIsNotANumber) {
         AlertError.open()
         return;
     }
     AlertError.close()
 
-    
+
     const result = calculateIMC(weight, height)
     displayResultMessage(result)
-    
+
 }
 function displayResultMessage(result) {
     const message = `Seu IMC é de ${result}`
-    
+
     Modal.message.innerText = message
+
+    if (result <= 18.5) {
+        Modal.image.src = '../imagens/baixo-peso.png';
+    }
+    else if (result <= 24.9) {
+        Modal.image.src = '../imagens/peso-normal.png';
+    }
+    else if (result <= 29.9) {
+        Modal.image.src = '../imagens/excesso-de-peso.png';
+    }
+    else if (result <= 35) {
+        Modal.image.src = '../imagens/obesidade.png';
+    }
+    else {
+        Modal.image.src = '../imagens/obesidade-extrema.png';
+    }
+    
     Modal.open()
 }
 Modal.buttonClose.onclick = () => {
@@ -67,11 +84,10 @@ Modal.buttonClose.onclick = () => {
 window.addEventListener('keydown', handleKeyDown)
 
 function handleKeyDown(event) {
-    if (event.key === 'Escape'){
+    if (event.key === 'Escape') {
         Modal.close()
     }
 }
-
 
 
 
