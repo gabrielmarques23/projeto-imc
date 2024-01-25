@@ -55,7 +55,7 @@ button {
 }
 
 .card {
-    padding: 3rem 2.8rem;
+    padding: 3rem 5rem;
     background-color: white;
     max-width: 310px;
     margin-inline: auto;
@@ -188,9 +188,9 @@ form button:hover {
 
 .modal .title-modal{
     font-size: 2rem;
-    line-height: 20px;
+    line-height: 15px;
     font-weight: bolder;
-    padding: 10px 5px;
+    padding: 10px 0px;
 }
 
 .img-imc{
@@ -198,6 +198,7 @@ form button:hover {
     place-content: center;
     margin: auto;
     padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .modal-weight{
