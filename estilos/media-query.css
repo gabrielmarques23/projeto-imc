@@ -46,6 +46,21 @@ TV: acima de 1200px
         background-image: linear-gradient(to bottom, #0c0c2e, #1a1a69);
     }
 
+    .imc-dados {
+        margin-top: 10px;
+        place-content: center;
+        display: grid;
+        box-sizing: border-box;
+    }
+
+    .input-wrapper {
+        margin-top: 1rem;
+    }
+
+    .btn-submit {
+        margin-top: 10px;
+    }
+
     .card {
         padding: 40px 60px;
         max-width: 550px;
@@ -56,6 +71,10 @@ TV: acima de 1200px
         font-size: 3.4rem;
         line-height: 6.4rem;
         padding: 0px 60px;
+    }
+
+    form label {
+        line-height: 1.5rem;
     }
 
     form button {
@@ -77,6 +96,18 @@ TV: acima de 1200px
         background-image: linear-gradient(to bottom, #0c0c2e, #1a1a69);
     }
 
+    .imc-dados {
+        display: none;
+    }
+
+    .imc-dados2 {
+        margin: 25px;
+        place-content: center;
+        display: grid;
+        box-sizing: border-box;
+    }
+
+
     .card {
         padding: 50px 70px;
         max-width: 650px;
@@ -89,9 +120,21 @@ TV: acima de 1200px
         padding: 0px 90px;
     }
 
+    form label {
+        line-height: 1.5rem;
+    }
+
     form button {
         font-size: 1.6rem;
         text-indent: 10px;
+    }
+
+    .input-wrapper {
+        margin-top: 1rem;
+    }
+
+    .btn-submit {
+        margin-top: 10px;
     }
 
     /*modal wrapper*/

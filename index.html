@@ -4,6 +4,7 @@
 <head>
 
     <!-- preconnect -->
+    <link rel="shortcut icon" href="imagens/imc-icon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -33,7 +34,7 @@
     </div>
 
     <div class="container">
-
+       
         <main class="card">
             <form onsubmit="" autocomplete="off">
                 <h1 class="tittle">Cálculo de IMC</h1>
@@ -46,8 +47,16 @@
                 <div class="input-wrapper">
                     <label for="height">Altura (cm)</label>
                     <input id="height" type="text" placeholder="175cm">
+                    
+                    <div class="imc-dados">
+                        <img src="imagens/1200x600wa.png" alt="Imagem balança imc">
+                    </div>
+                    
+                    <div class="imc-dados2">
+                        <img src="imagens/dados-imc2.png" alt="Imagem balança imc">
+                    </div>
                 </div>
-                <button type="submit">Calcular IMC
+                <button type="submit" class="btn-submit">Calcular o seu IMC
                     <img class="arrow" src="./imagens/arrow.png" alt="Seta apontada para a direita" srcset="">
                 </button>
 
