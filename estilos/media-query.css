@@ -16,15 +16,16 @@ TV: acima de 1200px
     }
 
     .card {
-        padding: 30px 40px;
+        padding: 40px 50px;
         max-width: 450px;
         border-radius: 10px;
     }
 
     .tittle {
-        font-size: 3rem;
+        font-size: 2.8rem;
         line-height: 6rem;
         padding: 0px 55px;
+        padding-bottom: 25px;
     }
 
     form button {
@@ -32,11 +33,23 @@ TV: acima de 1200px
         text-indent: 10px;
     }
 
+    .input-wrapper{
+        margin-bottom: 2.5rem;
+    }
+
     /*modal wrapper*/
     .modal .title-modal {
-        padding: 30px 12px;
-        font-size: 2.6rem;
+        padding: 0px 10px;
+        font-size: 2.5rem;
         line-height: 3.5rem;
+    }
+
+    .img-imc {
+        padding-bottom: 10px;
+        margin-top: 25px;
+    }
+    .modal-weight{
+        padding: 0px;
     }
 }
 
@@ -62,7 +75,7 @@ TV: acima de 1200px
     }
 
     .card {
-        padding: 40px 60px;
+        padding: 30px 60px;
         max-width: 550px;
         border-radius: 10px;
     }
@@ -84,11 +97,16 @@ TV: acima de 1200px
 
     /*modal wrapper*/
     .modal .title-modal {
-        padding: 15px 10px;
-        font-size: 2.6rem;
-        line-height: 4.2rem;
+        padding: 5px 10px;
+        font-size: 2.7rem;
+        line-height: 5.5rem;
     }
 
+    .img-imc {
+        padding: 25px 0px;
+        margin-top: 10px;
+    }
+   
 }
 
 @media screen and (min-width: 1200px) {
@@ -109,7 +127,7 @@ TV: acima de 1200px
 
 
     .card {
-        padding: 50px 70px;
+        padding: 40px 70px;
         max-width: 650px;
         border-radius: 10px;
     }
@@ -117,7 +135,9 @@ TV: acima de 1200px
     .tittle {
         font-size: 3.7rem;
         line-height: 6rem;
-        padding: 0px 90px;
+        padding: 0px 80px;
+        text-align: center;
+
     }
 
     form label {
@@ -130,7 +150,8 @@ TV: acima de 1200px
     }
 
     .input-wrapper {
-        margin-top: 1rem;
+        max-width: 550px;
+        margin-bottom: 2.5rem;
     }
 
     .btn-submit {
@@ -141,7 +162,7 @@ TV: acima de 1200px
     .modal-wrapper {
         position: absolute;
         inset: 0;
-        background: rgba(0, 0, 0, 0.7);
+        background: rgba(0, 0, 0, 0.486);
 
         display: grid;
         place-content: center;
@@ -149,9 +170,19 @@ TV: acima de 1200px
     }
 
     .modal .title-modal {
-        padding: 10px 30px;
-        font-size: 2.9rem;
+        padding: 0px 50px;
+        font-size: 3.5rem;
         line-height: 4rem;
+    }
+
+    .img-imc {
+        padding: 15px 0px;
+        margin-top: 15px;
+    }
+    .modal-weight{
+        font-size: 3rem;
+        margin-top: 10px;
+        padding:0px;
     }
 
 }
