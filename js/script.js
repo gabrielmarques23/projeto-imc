@@ -63,27 +63,27 @@ function displayResultMessage(result) {
     if (result <= 18.5) {
         Modal.weightM.innerText = 'ABAIXO DO PESO'
         Modal.weightM.style.color = '#00b7ee'
-        Modal.image.src = '../imagens/baixo-peso.png';
+        Modal.image.src = './imagens/baixo-peso.png';
     }
     else if (result <= 24.9) {
         Modal.weightM.innerText = 'PESO NORMAL'
         Modal.weightM.style.color = '#00a761'
-        Modal.image.src = '../imagens/peso-normal.png';
+        Modal.image.src = './imagens/peso-normal.png';
     }
     else if (result <= 29.9) {
         Modal.weightM.innerText = 'EXCESSO DE PESO'
         Modal.weightM.style.color = '#ffd200'
-        Modal.image.src = '../imagens/excesso-de-peso.png';
+        Modal.image.src = './imagens/excesso-de-peso.png';
     }
     else if (result <= 35) {
         Modal.weightM.innerText = 'OBESIDADE'
         Modal.weightM.style.color = '#ff7900'
-        Modal.image.src = '../imagens/obesidade.png';
+        Modal.image.src = './imagens/obesidade.png';
     }
     else {
         Modal.weightM.innerText = 'OBESIDADE EXREMA'
         Modal.weightM.style.color = '#ff1035'
-        Modal.image.src = '../imagens/obesidade-extrema.png';
+        Modal.image.src = './imagens/obesidade-extrema.png';
     }
 
     Modal.open()
